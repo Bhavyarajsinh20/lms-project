@@ -17,16 +17,27 @@ const Index = () => {
     <>
       <Navbar />
 
+      <div className="courses-details-image mt-3">
+        <img
+          src="images\events\events-details.jpg"
+          alt="image"
+          style={{ width: "100%", height: "100%" }}
+        />
+      </div>
       <section class="jumbotron text-center p-10" style={{ padding: "100px" }}>
         <div class="container">
           <h1 class="jumbotron-heading">Welcome to eLMS</h1>
           <p class="lead text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam
+            Unlock Your Potential with Our Diverse Range of Courses Join a
+            Vibrant Community of Learners and Experts Experience Interactive and
+            Engaging Online Education Empower Yourself with Flexible Learning
+            Options Explore Cutting-Edge Resources and Technologies Benefit from
+            Personalized Support and Guidance Transform Your Career or Expand
+            Your Knowledge Base Embark on a Journey of Lifelong Learning with
+            ELMS Welcome to a World of Endless Possibilities in Education
           </p>
           <p>
-            <a href="#" class="default-btn my-2">
+            <a href="courses-1" class="default-btn my-2">
               Explore courses
             </a>
           </p>

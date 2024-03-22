@@ -1,503 +1,269 @@
-import React from 'react';
-import Navbar from '../components/_App/Navbar';
-import PageBanner from '../components/Common/PageBanner';
-import Link from 'next/link';
-import Footer from '../components/_App/Footer';
+import React from "react";
+import Navbar from "../components/_App/Navbar";
+import PageBanner from "../components/Common/PageBanner";
+import Link from "next/link";
+import Footer from "../components/_App/Footer";
 
-const CoursesGrid02 = () => {
-    return (
-        <React.Fragment>
-            <Navbar />
-            <PageBanner 
-                pageTitle="Courses Grid 02" 
-                homePageUrl="/" 
-                homePageText="Home" 
-                activePageText="Courses Grid 02" 
-            />  
-
-            <div className="courses-area courses-section pt-100 pb-70">
-                <div className="container">
-                    <div className="edemy-grid-sorting row align-items-center">
-                        <div className="col-lg-8 col-md-6 result-count">
-                            <p>We found <span className="count">12</span> courses available for you</p>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 ordering">
-                            <div className="select-box">
-                                <select className="form-control">
-                                    <option>Sort By</option>
-                                    <option>Popularity</option>
-                                    <option>Latest</option>
-                                    <option>Price: low to high</option>
-                                    <option>Price: high to low</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-courses-box without-boxshadow">
-                                <div className="courses-image">
-                                    <Link href="#">
-                                        <a className="d-block image">
-                                            <img src="/images/courses/courses10.jpg" alt="image" />
-                                        </a>
-                                    </Link>
-                                    <a href="#" className="fav">
-                                        <i className="flaticon-heart"></i>
-                                    </a>
-                                    <div className="price shadow">$39</div>
-                                </div>
-                                <div className="courses-content">
-                                    <div className="course-author d-flex align-items-center">
-                                        <img src="/images/user1.jpg" className="rounded-circle" alt="image" />
-                                        <span>Alex Morgan</span>
-                                    </div>
-
-                                    <h3>
-                                        <Link href="#">
-                                            <a>Deep Learning The Numpy Stack in Python</a>
-                                        </Link>
-                                    </h3>
-
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                    <ul className="courses-box-footer d-flex justify-content-between align-items-center">
-                                        <li>
-                                            <i className='flaticon-agenda'></i> 15 Lessons
-                                        </li>
-                                        <li>
-                                            <i className='flaticon-people'></i> 145 Students
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-courses-box without-boxshadow">
-                                <div className="courses-image">
-                                    <Link href="#">
-                                        <a className="d-block image">
-                                            <img src="/images/courses/courses11.jpg" alt="image" />
-                                        </a>
-                                    </Link>
-                                    <a href="#" className="fav">
-                                        <i className="flaticon-heart"></i>
-                                    </a>
-                                    <div className="price shadow">$49</div>
-                                </div>
-                                <div className="courses-content">
-                                    <div className="course-author d-flex align-items-center">
-                                        <img src="/images/user2.jpg" className="rounded-circle" alt="image" />
-                                        <span>Sarah Taylor</span>
-                                    </div>
-                             
-                                    <h3>
-                                        <Link href="#">
-                                            <a>Statistics for Data Science and Business Analysis</a>
-                                        </Link>
-                                    </h3>
-
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                    <ul className="courses-box-footer d-flex justify-content-between align-items-center">
-                                        <li>
-                                            <i className='flaticon-agenda'></i> 20 Lessons
-                                        </li>
-                                        <li>
-                                            <i className='flaticon-people'></i> 100 Students
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-courses-box without-boxshadow">
-                                <div className="courses-image">
-                                    <Link href="#">
-                                        <a className="d-block image">
-                                            <img src="/images/courses/courses12.jpg" alt="image" />
-                                        </a>
-                                    </Link>
-                                    <a href="#" className="fav">
-                                        <i className="flaticon-heart"></i>
-                                    </a>
-                                    <div className="price shadow">$59</div>
-                                </div>
-                                <div className="courses-content">
-                                    <div className="course-author d-flex align-items-center">
-                                        <img src="/images/user3.jpg" className="rounded-circle" alt="image" />
-                                        <span>David Warner</span>
-                                    </div>
-                               
-                                    <h3>
-                                        <Link href="#">
-                                            <a>Microsoft Excel - Excel from Beginner to Advanced</a>
-                                        </Link>
-                                    </h3>
-
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                    <ul className="courses-box-footer d-flex justify-content-between align-items-center">
-                                        <li>
-                                            <i className='flaticon-agenda'></i> 20 Lessons
-                                        </li>
-                                        <li>
-                                            <i className='flaticon-people'></i> 150 Students
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-courses-box without-boxshadow">
-                                <div className="courses-image">
-                                    <Link href="#">
-                                        <a className="d-block image">
-                                            <img src="/images/courses/courses13.jpg" alt="image" />
-                                        </a>
-                                    </Link>
-                                    <a href="#" className="fav">
-                                        <i className="flaticon-heart"></i>
-                                    </a>
-                                    <div className="price shadow">$39</div>
-                                </div>
-                                <div className="courses-content">
-                                    <div className="course-author d-flex align-items-center">
-                                        <img src="/images/user6.jpg" className="rounded-circle" alt="image" />
-                                        <span>Alex Morgan</span>
-                                    </div>
-                                 
-                                    <h3>
-                                        <Link href="#">
-                                            <a>Python Django Web Development: To-Do App</a>
-                                        </Link>
-                                    </h3>
-
-                                    <p>Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                    <ul className="courses-box-footer d-flex justify-content-between align-items-center">
-                                        <li>
-                                            <i className='flaticon-agenda'></i> 15 Lessons
-                                        </li>
-                                        <li>
-                                            <i className='flaticon-people'></i> 145 Students
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-courses-box without-boxshadow">
-                                <div className="courses-image">
-                                    <Link href="#">
-                                        <a className="d-block image">
-                                            <img src="/images/courses/courses14.jpg" alt="image" />
-                                        </a>
-                                    </Link>
-                                    <a href="#" className="fav">
-                                        <i className="flaticon-heart"></i>
-                                    </a>
-                                    <div className="price shadow">$49</div>
-                                </div>
-                                <div className="courses-content">
-                                    <div className="course-author d-flex align-items-center">
-                                        <img src="/images/user5.jpg" className="rounded-circle" alt="image" />
-                                        <span>Sarah Taylor</span>
-                                    </div>
-                                  
-                                    <h3>
-                                        <Link href="#">
-                                            <a>Oracle SQL Developer : Essentials, Tips and Tricks</a>
-                                        </Link>
-                                    </h3>
-
-                                    <p>Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                    <ul className="courses-box-footer d-flex justify-content-between align-items-center">
-                                        <li>
-                                            <i className='flaticon-agenda'></i> 20 Lessons
-                                        </li>
-                                        <li>
-                                            <i className='flaticon-people'></i> 100 Students
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-courses-box without-boxshadow">
-                                <div className="courses-image">
-                                    <Link href="#">
-                                        <a className="d-block image">
-                                            <img src="/images/courses/courses15.jpg" alt="image" />
-                                        </a>
-                                    </Link>
-                                    <a href="#" className="fav">
-                                        <i className="flaticon-heart"></i>
-                                    </a>
-                                    <div className="price shadow">$99</div>
-                                </div>
-                                <div className="courses-content">
-                                    <div className="course-author d-flex align-items-center">
-                                        <img src="/images/user4.jpg" className="rounded-circle" alt="image" />
-                                        <span>James Anderson</span>
-                                    </div>
-                                
-                                    <h3>
-                                        <Link href="#">
-                                            <a>Learning A-Z™: Hands-On Python In Data Science</a>
-                                        </Link>
-                                    </h3>
-
-                                    <p>Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                    <ul className="courses-box-footer d-flex justify-content-between align-items-center">
-                                        <li>
-                                            <i className='flaticon-agenda'></i> 44 Lessons
-                                        </li>
-                                        <li>
-                                            <i className='flaticon-people'></i> 440 Students
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-courses-box without-boxshadow">
-                                <div className="courses-image">
-                                    <Link href="#">
-                                        <a className="d-block image">
-                                            <img src="/images/courses/courses1.jpg" alt="image" />
-                                        </a>
-                                    </Link>
-                                    <a href="#" className="fav">
-                                        <i className="flaticon-heart"></i>
-                                    </a>
-                                    <div className="price shadow">$39</div>
-                                </div>
-                                <div className="courses-content">
-                                    <div className="course-author d-flex align-items-center">
-                                        <img src="/images/user1.jpg" className="rounded-circle" alt="image" />
-                                        <span>Alex Morgan</span>
-                                    </div>
-                                
-                                    <h3>
-                                        <Link href="#">
-                                            <a>The Data Science Course 2020: Complete Data Science Bootcamp</a>
-                                        </Link>
-                                    </h3>
-
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                    <ul className="courses-box-footer d-flex justify-content-between align-items-center">
-                                        <li>
-                                            <i className='flaticon-agenda'></i> 15 Lessons
-                                        </li>
-                                        <li>
-                                            <i className='flaticon-people'></i> 145 Students
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-courses-box without-boxshadow">
-                                <div className="courses-image">
-                                    <Link href="#">
-                                        <a className="d-block image">
-                                            <img src="/images/courses/courses2.jpg" alt="image" />
-                                        </a>
-                                    </Link>
-                                    <a href="#" className="fav">
-                                        <i className="flaticon-heart"></i>
-                                    </a>
-                                    <div className="price shadow">$49</div>
-                                </div>
-                                <div className="courses-content">
-                                    <div className="course-author d-flex align-items-center">
-                                        <img src="/images/user2.jpg" className="rounded-circle" alt="image" />
-                                        <span>Sarah Taylor</span>
-                                    </div>
-                             
-                                    <h3>
-                                        <Link href="#">
-                                            <a>Java Programming MasterclassName for Software Developers</a>
-                                        </Link>
-                                    </h3>
-
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                    <ul className="courses-box-footer d-flex justify-content-between align-items-center">
-                                        <li>
-                                            <i className='flaticon-agenda'></i> 20 Lessons
-                                        </li>
-                                        <li>
-                                            <i className='flaticon-people'></i> 100 Students
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-courses-box without-boxshadow">
-                                <div className="courses-image">
-                                    <Link href="#">
-                                        <a className="d-block image">
-                                            <img src="/images/courses/courses3.jpg" alt="image" />
-                                        </a>
-                                    </Link>
-                                    <a href="#" className="fav">
-                                        <i className="flaticon-heart"></i>
-                                    </a>
-                                    <div className="price shadow">$59</div>
-                                </div>
-                                <div className="courses-content">
-                                    <div className="course-author d-flex align-items-center">
-                                        <img src="/images/user3.jpg" className="rounded-circle" alt="image" />
-                                        <span>David Warner</span>
-                                    </div>
-                                  
-                                    <h3>
-                                        <Link href="#">
-                                            <a>Deep Learning A-Z™: Hands-On Artificial Neural Networks</a>
-                                        </Link>
-                                    </h3>
-
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                    <ul className="courses-box-footer d-flex justify-content-between align-items-center">
-                                        <li>
-                                            <i className='flaticon-agenda'></i> 20 Lessons
-                                        </li>
-                                        <li>
-                                            <i className='flaticon-people'></i> 150 Students
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-courses-box without-boxshadow">
-                                <div className="courses-image">
-                                    <Link href="#">
-                                        <a className="d-block image">
-                                            <img src="/images/courses/courses4.jpg" alt="image" />
-                                        </a>
-                                    </Link>
-                                    <a href="#" className="fav">
-                                        <i className="flaticon-heart"></i>
-                                    </a>
-                                    <div className="price shadow">$39</div>
-                                </div>
-                                <div className="courses-content">
-                                    <div className="course-author d-flex align-items-center">
-                                        <img src="/images/user6.jpg" className="rounded-circle" alt="image" />
-                                        <span>Alex Morgan</span>
-                                    </div>
-                                   
-                                    <h3>
-                                        <Link href="#">
-                                            <a>Python for Finance: Investment Fundamentals & Data Analytics</a>
-                                        </Link>
-                                    </h3>
-
-                                    <p>Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                    <ul className="courses-box-footer d-flex justify-content-between align-items-center">
-                                        <li>
-                                            <i className='flaticon-agenda'></i> 15 Lessons
-                                        </li>
-                                        <li>
-                                            <i className='flaticon-people'></i> 145 Students
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-courses-box without-boxshadow">
-                                <div className="courses-image">
-                                    <Link href="#">
-                                        <a className="d-block image">
-                                            <img src="/images/courses/courses5.jpg" alt="image" />
-                                        </a>
-                                    </Link>
-                                    <a href="#" className="fav">
-                                        <i className="flaticon-heart"></i>
-                                    </a>
-                                    <div className="price shadow">$49</div>
-                                </div>
-                                <div className="courses-content">
-                                    <div className="course-author d-flex align-items-center">
-                                        <img src="/images/user5.jpg" className="rounded-circle" alt="image" />
-                                        <span>Sarah Taylor</span>
-                                    </div>
-                                
-                                    <h3>
-                                        <Link href="#">
-                                            <a>Machine Learning A-Z™: Hands-On Python & R In Data Science</a>
-                                        </Link>
-                                    </h3>
-
-                                    <p>Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                    <ul className="courses-box-footer d-flex justify-content-between align-items-center">
-                                        <li>
-                                            <i className='flaticon-agenda'></i> 20 Lessons
-                                        </li>
-                                        <li>
-                                            <i className='flaticon-people'></i> 100 Students
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-courses-box without-boxshadow">
-                                <div className="courses-image">
-                                    <Link href="#">
-                                        <a className="d-block image">
-                                            <img src="/images/courses/courses6.jpg" alt="image" />
-                                        </a>
-                                    </Link>
-                                    <a href="#" className="fav">
-                                        <i className="flaticon-heart"></i>
-                                    </a>
-                                    <div className="price shadow">$99</div>
-                                </div>
-                                <div className="courses-content">
-                                    <div className="course-author d-flex align-items-center">
-                                        <img src="/images/user4.jpg" className="rounded-circle" alt="image" />
-                                        <span>James Anderson</span>
-                                    </div>
-                       
-                                    <h3>
-                                        <Link href="#">
-                                            <a>R Programming A-Z™: R For Data Science With Real Exercises!</a>
-                                        </Link>
-                                    </h3>
-
-                                    <p>Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                    <ul className="courses-box-footer d-flex justify-content-between align-items-center">
-                                        <li>
-                                            <i className='flaticon-agenda'></i> 44 Lessons
-                                        </li>
-                                        <li>
-                                            <i className='flaticon-people'></i> 440 Students
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+const CoursesGrid01 = () => {
+  return (
+    <React.Fragment>
+      <Navbar />
+      <PageBanner
+        pageTitle="Web Development Courses"
+        homePageUrl="/"
+        homePageText="Home"
+        activePageText="Web Development Courses"
+      />
+      <div className="courses-area courses-section pt-100 pb-70">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-6">
+              <div className="single-courses-box">
+                <div className="courses-image">
+                  <Link href="/single-courses-1">
+                    <a className="d-block image">
+                      <img
+                        src="\images\courses\HTML.jpg"
+                        alt="image"
+                        style={{ width: "450px", height: "260px" }}
+                      />
+                    </a>
+                  </Link>
                 </div>
+                <div className="courses-content">
+                  <h3>
+                    <Link href="/single-courses-1">
+                      <a>HTML-5</a>
+                    </Link>
+                  </h3>
+
+                  <p>
+                    PowHTML5 elements are the building blocks of a webpage. Each
+                    element is represented by a tag. An opening tag marks the
+                    start of an element, and a closing tag marks its end. Most
+                    elements have both opening and closing tags, while some
+                    elements are self-closing.
+                  </p>
+                  <ul className="courses-box-footer d-flex justify-content-between align-items-center">
+                    <li>
+                      <div className="price">$39</div>
+                      {/* <i className="flaticon-people"></i> 145 Students */}
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            <Footer />
-        </React.Fragment>
-    )
-}
+            <div className="col-lg-4 col-md-6">
+              <div className="single-courses-box">
+                <div className="courses-image">
+                  <Link href="/single-courses-1">
+                    <a className="d-block image">
+                      <img
+                        src="/images/courses/css.jpg"
+                        alt="image"
+                        style={{ width: "450px", height: "260px" }}
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <div className="courses-content">
+                  <div className="course-author d-flex align-items-center"></div>
 
-export default CoursesGrid02;
+                  <h3>
+                    <Link href="/single-courses-1">
+                      <a>Css-3</a>
+                    </Link>
+                  </h3>
+
+                  <p>
+                    CSS3, also known as Cascading Style Sheets Level 3, is a
+                    more advanced version of CSS and the successor of CSS2. CSS3
+                    is used for the same thing as CSS, namely to style web pages
+                    and make them more attractive and user-friendly.
+                  </p>
+                  <ul className="courses-box-footer d-flex justify-content-between align-items-center">
+                    <li>
+                      <div className="price ">$49</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6">
+              <div className="single-courses-box">
+                <div className="courses-image">
+                  <Link href="/single-courses-1">
+                    <a className="d-block image">
+                      <img
+                        src="/images/courses/js.png"
+                        alt="image"
+                        style={{ width: "450px", height: "260px" }}
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <div className="courses-content">
+                  <h3>
+                    <Link href="/single-courses-1">
+                      <a>Java Script</a>
+                    </Link>
+                  </h3>
+
+                  <p>
+                    JavaScript (JS) is a cross-platform, object-oriented
+                    programming language used by developers to make web pages
+                    interactive. It allows developers to create dynamically
+                    updating content, use animations, pop-up menus, clickable
+                    buttons, control multimedia, etc
+                  </p>
+                  <ul className="courses-box-footer d-flex justify-content-between align-items-center">
+                    <li>
+                      <div className="price">$99</div>
+                      {/* <i className="flaticon-people"></i> 440 Students */}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6">
+              <div className="single-courses-box">
+                <div className="courses-image">
+                  <Link href="/single-courses-1">
+                    <a className="d-block image">
+                      <img
+                        src="/images/courses/boot.png"
+                        alt="image"
+                        style={{ width: "450px", height: "260px" }}
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <div className="courses-content">
+                  <div className="course-author d-flex align-items-center">
+                    {/* <img
+                      src="/images/user6.jpg"
+                      className="rounded-circle"
+                      alt="image"
+                    />
+                    <span>Alex Morgan</span> */}
+                  </div>
+
+                  <h3>
+                    <Link href="/single-courses-1">
+                      <a>Bootstrap</a>
+                    </Link>
+                  </h3>
+
+                  <p>
+                    Designed to enable responsive development of mobile-first
+                    websites, Bootstrap provides a collection of syntax for
+                    template designs. As a framework, Bootstrap includes the
+                    basics for responsive web development, so developers only
+                    need to insert the code into a pre-defined grid system.
+                  </p>
+                  <ul className="courses-box-footer d-flex justify-content-between align-items-center">
+                    <li>
+                      <div className="price">$39</div>
+                      {/* <i className="flaticon-people"></i> 145 Students */}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6">
+              <div className="single-courses-box">
+                <div className="courses-image">
+                  <Link href="/single-courses-1">
+                    <a className="d-block image">
+                      <img
+                        src="/images/courses/wp.jpg"
+                        alt="image"
+                        style={{ width: "450px", height: "260px" }}
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <div className="courses-content">
+                  <div className="course-author d-flex align-items-center"></div>
+
+                  <h3>
+                    <Link href="/single-courses-1">
+                      <a>Wordpress</a>
+                    </Link>
+                  </h3>
+
+                  <p>
+                    WordPress is designed to be user-friendly, making it easy
+                    for even those without technical skills to create and manage
+                    a website. The platform's intuitive interface and
+                    user-friendly dashboard make it simple to add pages, posts,
+                    and media to your site.
+                  </p>
+                  <ul className="courses-box-footer d-flex justify-content-between align-items-center">
+                    <li>
+                      <div className="price">$49</div>
+                      {/* <i className="flaticon-people"></i> 100 Students */}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6">
+              <div className="single-courses-box">
+                <div className="courses-image">
+                  <Link href="/single-courses-1">
+                    <a className="d-block image">
+                      <img
+                        src="/images/courses/jquery.png"
+                        alt="image"
+                        style={{ width: "450px", height: "260px" }}
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <div className="courses-content">
+                  <div className="course-author d-flex align-items-center">
+                    {/* <img
+                      src="/images/user4.jpg"
+                      className="rounded-circle"
+                      alt="image"
+                    />
+                    <span>James Anderson</span> */}
+                  </div>
+
+                  <h3>
+                    <Link href="/single-courses-1">
+                      <a>Jquery</a>
+                    </Link>
+                  </h3>
+
+                  <p>
+                    JQuery simplifies the HTML markup, document traversal, event
+                    handling, animating, and AJAX interactions for rapid web
+                    development. You can think of JQuery as a Swiss Army Knife
+                    for JavaScript, bundling together everyday tasks into
+                    concise, cross-browser compatible code.
+                  </p>
+                  <ul className="courses-box-footer d-flex justify-content-between align-items-center">
+                    <li>
+                      <div className="price">$99</div>
+                      {/* <i className="flaticon-people"></i> 440 Students */}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </React.Fragment>
+  );
+};
+
+export default CoursesGrid01;

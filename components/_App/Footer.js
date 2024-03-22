@@ -10,16 +10,16 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-6">
             <div className="single-footer-widget">
-              <Link href="/">
-                <a className="logo">
-                  <img src="/images/eLMS.png" alt="logo" />
-                </a>
-              </Link>
+              <a className="logo">
+                <img src="/images/eLMS.png" alt="logo" />
+              </a>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam
+                The e Learning Management System (eLMS) is the new home for your
+                learning needs outside of the classroom. An interactive
+                educational app, engaging social networking platform, and
+                personal organizer all in one the eLMS has your student life
+                covered!
               </p>
             </div>
           </div>
@@ -39,7 +39,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/courses-1">
+                  <Link href="contact">
                     <a>Contact us</a>
                   </Link>
                 </li>
@@ -49,21 +49,36 @@ const Footer = () => {
 
           <div className="col-lg-2 col-md-6 col-sm-6">
             <div className="single-footer-widget">
-              <h3>Resources</h3>
+              <h3>Categories</h3>
               <ul className="footer-links-list">
                 <li>
-                  <Link href="#">
-                    <a>Demo Link</a>
+                  <Link href="/courses-2">
+                    <a>Web Development</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#">
-                    <a>Demo Link 1</a>
+                  <Link href="/courses-3">
+                    <a>Game Development</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#">
-                    <a>Demo Link 2</a>
+                  <Link href="/courses-4">
+                    <a>App Development</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/courses-5">
+                    <a>Data Science</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/courses-6">
+                    <a>Software Testing</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/courses-7">
+                    <a>No-Code Development</a>
                   </Link>
                 </li>
               </ul>

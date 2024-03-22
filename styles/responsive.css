@@ -253,6 +253,7 @@
   .single-features-box .link-btn {
     margin-top: 3px;
     font-size: 14.5px;
+    justify-content: center;
   }
   .single-features-box:hover {
     -webkit-transform: translateY(0);
@@ -485,6 +486,7 @@
     margin-top: 0;
   }
   .single-advisor-item .advisor-image .social-link {
+    justify-content: center;
     bottom: 10px;
   }
   .single-advisor-item .advisor-image .social-link li {
@@ -492,6 +494,7 @@
             transform: translateY(0);
     opacity: 1;
     visibility: visible;
+    justify-content: center;
   }
   .single-advisor-item .advisor-content h3 {
     font-size: 19px;
@@ -892,6 +895,7 @@
     right: 20px;
     top: -25px;
     font-size: 25px;
+    justify-content: center;
   }
   .faq-accordion-tab .react-tabs__tab-list {
     margin-bottom: 20px;
@@ -1262,6 +1266,7 @@
     font-size: 15px;
   }
   .courses-details-info .courses-share .share-info .social-link {
+    justify-content: center;
     bottom: -44px;
     opacity: 1;
     visibility: visible;

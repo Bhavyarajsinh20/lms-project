@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className="edemy-nav">
           <div className="container-fluid">
             <div className="navbar navbar-expand-lg navbar-light d-flex justify-content-between">
-              <Link href="/">
+              <Link href="">
                 <a onClick={toggleNavbar} className="navbar-brand">
                   <img
                     src="/images/eLMS.png"
@@ -73,9 +73,8 @@ const Navbar = () => {
                   </button>
                 </form>
 
-                <div className="others-option d-flex align-items-center">
-                  <div className="option-item"></div>
-                  <Link href="/profile-authentication">
+                <div className="others-option d-flex">
+                  <Link href="/profile-authentication ">
                     <a className="default-btn">Login</a>
                   </Link>
                 </div>

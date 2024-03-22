@@ -24,23 +24,9 @@ const LoginForm = () => {
             placeholder="Password"
           />
         </div>
-
-        {/* <div className="row align-items-center">
-          <div className="col-lg-6 col-md-6 col-sm-6 remember-me-wrap">
-            <p>
-              <input type="checkbox" id="test2" />
-              <label htmlFor="test2">Remember me</label>
-            </p>
-          </div>
-
-          <div className="col-lg-6 col-md-6 col-sm-6 lost-your-password-wrap">
-            <Link href="#">
-              <a className="lost-your-password">Lost your password?</a>
-            </Link>
-          </div>
-        </div> */}
-
-        <button type="submit">Log In</button>
+        <button type="submit">
+          <a href="courses-1"> Log In </a>
+        </button>
       </form>
     </div>
   );

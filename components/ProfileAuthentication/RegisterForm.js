@@ -2,7 +2,7 @@ import React from "react";
 
 const RegisterForm = () => {
   return (
-    <div className="register-form">
+    <div className="login-form">
       <h2>Register</h2>
 
       <form>
@@ -41,6 +41,7 @@ const RegisterForm = () => {
             placeholder="Password"
           />
         </div>
+
         <div className="form-group">
           <label>Confirm Password</label>
           <input
@@ -50,7 +51,9 @@ const RegisterForm = () => {
           />
         </div>
 
-        <button type="submit">Register</button>
+        <button type="submit">
+          <a href="courses-1">RegisterForm </a>
+        </button>
       </form>
     </div>
   );

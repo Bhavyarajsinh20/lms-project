@@ -9,12 +9,12 @@ const ProfileAuthentication = () => {
   return (
     <React.Fragment>
       <Navbar />
-      {/* <PageBanner 
-                pageTitle="Profile Authentication" 
-                homePageUrl="/" 
-                homePageText="Home" 
-                activePageText="Profile Authentication" 
-            /> */}
+      <PageBanner
+        pageTitle="Create Your Profile"
+        homePageUrl="/"
+        homePageText="Home"
+        activePageText="Create Your Profile"
+      />
 
       <div className="profile-authentication-area ptb-100">
         <div className="container">

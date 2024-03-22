@@ -2429,6 +2429,8 @@ About Area CSS
   border: 1px solid #fe4a55;
 }
 
+
+
 .about-video-box .video-btn::before {
   -webkit-animation: ripple 2s linear infinite;
           animation: ripple 2s linear infinite;

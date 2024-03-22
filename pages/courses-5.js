@@ -1,470 +1,278 @@
-import React from 'react';
-import Navbar from '../components/_App/Navbar';
-import PageBanner from '../components/Common/PageBanner';
+import React from "react";
+import Navbar from "../components/_App/Navbar";
+import PageBanner from "../components/Common/PageBanner";
+import Link from "next/link";
+import Footer from "../components/_App/Footer";
 
-import Footer from '../components/_App/Footer';
-import Link from 'next/link';
-
-const CoursesList01 = () => {
-    return (
-        <React.Fragment>
-            <Navbar />
-            <PageBanner 
-                pageTitle="Courses List 01" 
-                homePageUrl="/" 
-                homePageText="Home" 
-                activePageText="Courses List 01" 
-            />  
-
-            <div className="courses-area ptb-100 bg-f5f7fa">
-                <div className="container">
-                    <div className="edemy-grid-sorting row align-items-center">
-                        <div className="col-lg-8 col-md-6 result-count">
-                            <p>We found <span className="count">12</span> courses available for you</p>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 ordering">
-                            <div className="select-box">
-                                <select className="form-control">
-                                    <option>Sort By</option>
-                                    <option>Popularity</option>
-                                    <option>Latest</option>
-                                    <option>Price: low to high</option>
-                                    <option>Price: high to low</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col-lg-6 col-md-12">
-                            <div className="single-courses-item">
-                                <div className="row align-items-center">
-                                    <div className="col-lg-4 col-md-4">
-                                        <div className="courses-image">
-                                            <img src="/images/courses-small/courses-small1.jpg" alt="image" />
-
-                                            <Link href="#">
-                                                <a className="link-btn"></a>
-                                            </Link>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-lg-8 col-md-8">
-                                        <div className="courses-content">
-                                            <a href="#" className="fav">
-                                                <i className="flaticon-heart"></i>
-                                            </a>
-                                            <span className="price">$39</span>
-                                            <h3>
-                                                <Link href="#">
-                                                    <a>Agile Crash Course: Agile Project Management</a>
-                                                </Link>
-                                            </h3>
-                                            <ul className="courses-content-footer d-flex justify-content-between align-items-center">
-                                                <li>
-                                                    <i className='flaticon-agenda'></i> 15 Lessons
-                                                </li>
-                                                <li>
-                                                    <i className='flaticon-people'></i> 145 Students
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-6 col-md-12">
-                            <div className="single-courses-item">
-                                <div className="row align-items-center">
-                                    <div className="col-lg-4 col-md-4">
-                                        <div className="courses-image">
-                                            <img src="/images/courses-small/courses-small2.jpg" alt="image" />
-
-                                            <Link href="#">
-                                                <a className="link-btn"></a>
-                                            </Link>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-lg-8 col-md-8">
-                                        <div className="courses-content">
-                                            <a href="#" className="fav">
-                                                <i className="flaticon-heart"></i>
-                                            </a>
-                                            <span className="price">$99</span>
-                                            <h3>
-                                                <Link href="#">
-                                                    <a>Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)</a>
-                                                </Link>
-                                            </h3>
-                                            <ul className="courses-content-footer d-flex justify-content-between align-items-center">
-                                                <li>
-                                                    <i className='flaticon-agenda'></i> 14 Lessons
-                                                </li>
-                                                <li>
-                                                    <i className='flaticon-people'></i> 100 Students
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-6 col-md-12">
-                            <div className="single-courses-item">
-                                <div className="row align-items-center">
-                                    <div className="col-lg-4 col-md-4">
-                                        <div className="courses-image">
-                                            <img src="/images/courses-small/courses-small3.jpg" alt="image" />
-
-                                            <Link href="#">
-                                                <a className="link-btn"></a>
-                                            </Link>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-lg-8 col-md-8">
-                                        <div className="courses-content">
-                                            <a href="#" className="fav">
-                                                <i className="flaticon-heart"></i>
-                                            </a>
-                                            <span className="price">$49</span>
-                                            <h3>
-                                                <Link href="#">
-                                                    <a>The Python Bible™ | Everything You Need to Program in Python</a>
-                                                </Link>
-                                            </h3>
-                                            <ul className="courses-content-footer d-flex justify-content-between align-items-center">
-                                                <li>
-                                                    <i className='flaticon-agenda'></i> 11 Lessons
-                                                </li>
-                                                <li>
-                                                    <i className='flaticon-people'></i> 104 Students
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-6 col-md-12">
-                            <div className="single-courses-item">
-                                <div className="row align-items-center">
-                                    <div className="col-lg-4 col-md-4">
-                                        <div className="courses-image">
-                                            <img src="/images/courses-small/courses-small4.jpg" alt="image" />
-
-                                            <Link href="#">
-                                                <a className="link-btn"></a>
-                                            </Link>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-lg-8 col-md-8">
-                                        <div className="courses-content">
-                                            <a href="#" className="fav"><i className="flaticon-heart"></i></a>
-                                            <span className="price">$79</span>
-                                            <h3>
-                                                <Link href="#">
-                                                    <a>Mathematical Foundation For Machine Learning and AI</a>
-                                                </Link>
-                                            </h3>
-                                            <ul className="courses-content-footer d-flex justify-content-between align-items-center">
-                                                <li>
-                                                    <i className='flaticon-agenda'></i> 14 Lessons
-                                                </li>
-                                                <li>
-                                                    <i className='flaticon-people'></i> 100 Students
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-6 col-md-12">
-                            <div className="single-courses-item">
-                                <div className="row align-items-center">
-                                    <div className="col-lg-4 col-md-4">
-                                        <div className="courses-image">
-                                            <img src="/images/courses-small/courses-small5.jpg" alt="image" />
-
-                                            <Link href="#">
-                                                <a className="link-btn"></a>
-                                            </Link>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-lg-8 col-md-8">
-                                        <div className="courses-content">
-                                            <a href="#" className="fav"><i className="flaticon-heart"></i></a>
-                                            <span className="price">$59</span>
-                                            <h3><a href="#">The Ultimate Drawing Course - Beginner to Advanced</a></h3>
-                                            <ul className="courses-content-footer d-flex justify-content-between align-items-center">
-                                                <li>
-                                                    <i className='flaticon-agenda'></i> 09 Lessons
-                                                </li>
-                                                <li>
-                                                    <i className='flaticon-people'></i> 150 Students
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-6 col-md-12">
-                            <div className="single-courses-item">
-                                <div className="row align-items-center">
-                                    <div className="col-lg-4 col-md-4">
-                                        <div className="courses-image">
-                                            <img src="/images/courses-small/courses-small6.jpg" alt="image" />
-
-                                            <Link href="#">
-                                                <a className="link-btn"></a>
-                                            </Link>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-lg-8 col-md-8">
-                                        <div className="courses-content">
-                                            <a href="#" className="fav"><i className="flaticon-heart"></i></a>
-                                            <span className="price">$89</span>
-                                            <h3><a href="#">PyTorch: Deep Learning and Artificial Intelligence</a></h3>
-                                            <ul className="courses-content-footer d-flex justify-content-between align-items-center">
-                                                <li>
-                                                    <i className='flaticon-agenda'></i> 20 Lessons
-                                                </li>
-                                                <li>
-                                                    <i className='flaticon-people'></i> 200 Students
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-6 col-md-12">
-                            <div className="single-courses-item">
-                                <div className="row align-items-center">
-                                    <div className="col-lg-4 col-md-4">
-                                        <div className="courses-image">
-                                            <img src="/images/courses-small/courses-small7.jpg" alt="image" />
-
-                                            <Link href="#">
-                                                <a className="link-btn"></a>
-                                            </Link>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-lg-8 col-md-8">
-                                        <div className="courses-content">
-                                            <a href="#" className="fav"><i className="flaticon-heart"></i></a>
-                                            <span className="price">$39</span>
-                                            <h3><a href="#">Data Visualization with Python and Matplotlib</a></h3>
-                                            <ul className="courses-content-footer d-flex justify-content-between align-items-center">
-                                                <li>
-                                                    <i className='flaticon-agenda'></i> 15 Lessons
-                                                </li>
-                                                <li>
-                                                    <i className='flaticon-people'></i> 145 Students
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-6 col-md-12">
-                            <div className="single-courses-item">
-                                <div className="row align-items-center">
-                                    <div className="col-lg-4 col-md-4">
-                                        <div className="courses-image">
-                                            <img src="/images/courses-small/courses-small8.jpg" alt="image" />
-
-                                            <Link href="#">
-                                                <a className="link-btn"></a>
-                                            </Link>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-lg-8 col-md-8">
-                                        <div className="courses-content">
-                                            <a href="#" className="fav"><i className="flaticon-heart"></i></a>
-                                            <span className="price">$99</span>
-                                            <h3><a href="#">Static and Interactive Data Visualizations in R</a></h3>
-                                            <ul className="courses-content-footer d-flex justify-content-between align-items-center">
-                                                <li>
-                                                    <i className='flaticon-agenda'></i> 14 Lessons
-                                                </li>
-                                                <li>
-                                                    <i className='flaticon-people'></i> 100 Students
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-6 col-md-12">
-                            <div className="single-courses-item">
-                                <div className="row align-items-center">
-                                    <div className="col-lg-4 col-md-4">
-                                        <div className="courses-image">
-                                            <img src="/images/courses-small/courses-small9.jpg" alt="image" />
-
-                                            <Link href="#">
-                                                <a className="link-btn"></a>
-                                            </Link>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-lg-8 col-md-8">
-                                        <div className="courses-content">
-                                            <a href="#" className="fav"><i className="flaticon-heart"></i></a>
-                                            <span className="price">$49</span>
-                                            <h3><a href="#">R for Data Science: Learn R Programming in 2 Hours</a></h3>
-                                            <ul className="courses-content-footer d-flex justify-content-between align-items-center">
-                                                <li>
-                                                    <i className='flaticon-agenda'></i> 11 Lessons
-                                                </li>
-                                                <li>
-                                                    <i className='flaticon-people'></i> 104 Students
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-6 col-md-12">
-                            <div className="single-courses-item">
-                                <div className="row align-items-center">
-                                    <div className="col-lg-4 col-md-4">
-                                        <div className="courses-image">
-                                            <img src="/images/courses-small/courses-small10.jpg" alt="image" />
-
-                                            <Link href="#">
-                                                <a className="link-btn"></a>
-                                            </Link>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-lg-8 col-md-8">
-                                        <div className="courses-content">
-                                            <a href="#" className="fav"><i className="flaticon-heart"></i></a>
-                                            <span className="price">$79</span>
-                                            <h3><a href="#">Complete Python Developer in 2020: Zero to Mastery</a></h3>
-                                            <ul className="courses-content-footer d-flex justify-content-between align-items-center">
-                                                <li>
-                                                    <i className='flaticon-agenda'></i> 14 Lessons
-                                                </li>
-                                                <li>
-                                                    <i className='flaticon-people'></i> 100 Students
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-6 col-md-12">
-                            <div className="single-courses-item">
-                                <div className="row align-items-center">
-                                    <div className="col-lg-4 col-md-4">
-                                        <div className="courses-image">
-                                            <img src="/images/courses-small/courses-small1.jpg" alt="image" />
-
-                                            <Link href="#">
-                                                <a className="link-btn"></a>
-                                            </Link>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-lg-8 col-md-8">
-                                        <div className="courses-content">
-                                            <a href="#" className="fav"><i className="flaticon-heart"></i></a>
-                                            <span className="price">$59</span>
-                                            <h3><a href="#">Python for Beginners with Examples</a></h3>
-                                            <ul className="courses-content-footer d-flex justify-content-between align-items-center">
-                                                <li>
-                                                    <i className='flaticon-agenda'></i> 09 Lessons
-                                                </li>
-                                                <li>
-                                                    <i className='flaticon-people'></i> 150 Students
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-6 col-md-12">
-                            <div className="single-courses-item">
-                                <div className="row align-items-center">
-                                    <div className="col-lg-4 col-md-4">
-                                        <div className="courses-image">
-                                            <img src="/images/courses-small/courses-small12.jpg" alt="image" />
-
-                                            <Link href="#">
-                                                <a className="link-btn"></a>
-                                            </Link>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-lg-8 col-md-8">
-                                        <div className="courses-content">
-                                            <a href="#" className="fav"><i className="flaticon-heart"></i></a>
-                                            <span className="price">$89</span>
-                                            <h3><a href="#">Python Django Web Development: To-Do App</a></h3>
-                                            <ul className="courses-content-footer d-flex justify-content-between align-items-center">
-                                                <li>
-                                                    <i className='flaticon-agenda'></i> 20 Lessons
-                                                </li>
-                                                <li>
-                                                    <i className='flaticon-people'></i> 200 Students
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Pagination */}
-                        <div className="col-lg-12 col-md-12">
-                            <div className="pagination-area text-center">
-                                <a href="#" className="prev page-numbers">
-                                    <i className='bx bx-chevrons-left'></i>
-                                </a>
-                                <span className="page-numbers current" aria-current="page">1</span>
-                                <a href="#" className="page-numbers">2</a>
-                                <a href="#" className="page-numbers">3</a>
-                                <a href="#" className="page-numbers">4</a>
-                                <a href="#" className="next page-numbers">
-                                    <i className='bx bx-chevrons-right'></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+const CoursesGrid01 = () => {
+  return (
+    <React.Fragment>
+      <Navbar />
+      <PageBanner
+        pageTitle="Data Science"
+        homePageUrl="/"
+        homePageText="Home"
+        activePageText="Data Science"
+      />
+      <div className="courses-area courses-section pt-100 pb-70">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-6">
+              <div className="single-courses-box">
+                <div className="courses-image">
+                  <Link href="/single-courses-1">
+                    <a className="d-block image">
+                      <img
+                        src="\images\courses\4.jpeg"
+                        alt="image"
+                        style={{ width: "450px", height: "260px" }}
+                      />
+                    </a>
+                  </Link>
                 </div>
-            </div>
-     
-            <Footer />
-        </React.Fragment>
-    )
-}
+                <div className="courses-content">
+                  <div className="course-author d-flex align-items-center">
+                    {/* <img
+                      src="/images/user6.jpg"
+                      className="rounded-circle"
+                      alt="image"
+                    />
+                    <span>Alex Morgan</span> */}
+                  </div>
 
-export default CoursesList01;
+                  <h3>
+                    <Link href="/single-courses-1">
+                      <a>Python</a>
+                    </Link>
+                  </h3>
+
+                  <p>
+                    Tune for Highest Efficiency at Scale using Advanced
+                    Tools-OpenMP, tbb4py, mpi4py, more. Program multiple devices
+                    using Data Parallel Python (DPPy) without rewriting CPU
+                    code. Near-Native Performance. Scalable Performance. Data
+                    Parallel Extensions.
+                  </p>
+                  <ul className="courses-box-footer d-flex justify-content-between align-items-center">
+                    <li>
+                      <div className="price">$39</div>
+                      {/* <i className="flaticon-people"></i> 145 Students */}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6">
+              <div className="single-courses-box">
+                <div className="courses-image">
+                  <Link href="/single-courses-1">
+                    <a className="d-block image">
+                      <img
+                        src="/images/courses/R.png"
+                        alt="image"
+                        style={{ width: "450px", height: "260px" }}
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <div className="courses-content">
+                  <div className="course-author d-flex align-items-center"></div>
+
+                  <h3>
+                    <Link href="/single-courses-1">
+                      <a>R Programming</a>
+                    </Link>
+                  </h3>
+
+                  <p>
+                    R is popular among data analysts and research scientists as
+                    it helps them import and clean data and perform effective
+                    quantitative analyses. Moreover, R coding was among the top
+                    five programming languages of the year as of August 2021.
+                  </p>
+                  <ul className="courses-box-footer d-flex justify-content-between align-items-center">
+                    <li>
+                      <div className="price ">$49</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6">
+              <div className="single-courses-box">
+                <div className="courses-image">
+                  <Link href="/single-courses-1">
+                    <a className="d-block image">
+                      <img
+                        src="/images/courses/9.jpeg"
+                        alt="image"
+                        style={{ width: "450px", height: "260px" }}
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <div className="courses-content">
+                  <h3>
+                    <Link href="/single-courses-1">
+                      <a>SQl</a>
+                    </Link>
+                  </h3>
+
+                  <p>
+                    Keywords are words that have significance in SQL. Certain
+                    keywords, such as SELECT , DELETE , or BIGINT , are reserved
+                    and require special treatment for use as identifiers such as
+                    table and column names. This may also be true for the names
+                    of built-in functions.
+                  </p>
+                  <ul className="courses-box-footer d-flex justify-content-between align-items-center">
+                    <li>
+                      <div className="price">$99</div>
+                      {/* <i className="flaticon-people"></i> 440 Students */}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6">
+              <div className="single-courses-box">
+                <div className="courses-image">
+                  <Link href="/single-courses-1">
+                    <a className="d-block image">
+                      <img
+                        src="/images/courses/s2.png"
+                        alt="image"
+                        style={{ width: "450px", height: "260px" }}
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <div className="courses-content">
+                  <div className="course-author d-flex align-items-center">
+                    {/* <img
+                      src="/images/user6.jpg"
+                      className="rounded-circle"
+                      alt="image"
+                    />
+                    <span>Alex Morgan</span> */}
+                  </div>
+
+                  <h3>
+                    <Link href="/single-courses-1">
+                      <a>Scala</a>
+                    </Link>
+                  </h3>
+
+                  <p>
+                    Due to its high scalability, Scala programming language is
+                    used for managing websites of companies that receive a lot
+                    of traffic like Twitter, Netflix, and LinkedIn. Therefore,
+                    if you wish to work as a developer or programmer at top
+                    companies that process large amounts of data, it is
+                    essential to learn Scala.
+                  </p>
+                  <ul className="courses-box-footer d-flex justify-content-between align-items-center">
+                    <li>
+                      <div className="price">$39</div>
+                      {/* <i className="flaticon-people"></i> 145 Students */}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6">
+              <div className="single-courses-box">
+                <div className="courses-image">
+                  <Link href="/single-courses-1">
+                    <a className="d-block image">
+                      <img
+                        src="/images/courses/julia.png"
+                        alt="image"
+                        style={{ width: "450px", height: "260px" }}
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <div className="courses-content">
+                  <div className="course-author d-flex align-items-center"></div>
+
+                  <h3>
+                    <Link href="/single-courses-1">
+                      <a>Julia Programing</a>
+                    </Link>
+                  </h3>
+
+                  <p>
+                    Overall, Julia is an excellent choice for those who want to
+                    maximize the results of their machine learning and data
+                    science projects. It is a language for a range of
+                    applications because of its robust libraries, simple syntax,
+                    and fast speeds.
+                  </p>
+                  <ul className="courses-box-footer d-flex justify-content-between align-items-center">
+                    <li>
+                      <div className="price">$49</div>
+                      {/* <i className="flaticon-people"></i> 100 Students */}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6">
+              <div className="single-courses-box">
+                <div className="courses-image">
+                  <Link href="/single-courses-1">
+                    <a className="d-block image">
+                      <img
+                        src="/images/courses/java.jpg"
+                        alt="image"
+                        style={{ width: "450px", height: "260px" }}
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <div className="courses-content">
+                  <div className="course-author d-flex align-items-center">
+                    {/* <img
+                      src="/images/user4.jpg"
+                      className="rounded-circle"
+                      alt="image"
+                    />
+                    <span>James Anderson</span> */}
+                  </div>
+
+                  <h3>
+                    <Link href="/single-courses-1">
+                      <a>Java</a>
+                    </Link>
+                  </h3>
+
+                  <p>
+                    Having proficiency in major OOPs concepts like polymorphism,
+                    inheritance, encapsulation and abstraction is beneficial for
+                    this job role. Java build tools: A Java developer works with
+                    various tools when completing software development tasks.
+                  </p>
+                  <ul className="courses-box-footer d-flex justify-content-between align-items-center">
+                    <li>
+                      <div className="price">$99</div>
+                      {/* <i className="flaticon-people"></i> 440 Students */}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </React.Fragment>
+  );
+};
+
+export default CoursesGrid01;
